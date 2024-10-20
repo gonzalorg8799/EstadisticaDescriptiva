@@ -29,11 +29,9 @@ En esta tabla se muestran los resultados de las medidas estadístcas de centrali
 | ------- |-------|----------------|----------------|
 | Tamaño de muestra | 126 | 63 | 63|
 | Medidas de centralización |
-|-----------------------------------------------------|
 | Media | 219.65 | 185.17  | 254.13  |
 | Mediana |  169 | 141 | 186 | 
 | Medidas de dispersión | 
-|-----------------------------------------------------|
 | Mínimo | 18 | 18 | 30 |
 | Máximo | 797 | 581 | 797 |
 | Rango | 779 | 563 | 767 |
@@ -48,9 +46,42 @@ En esta tabla se muestran los resultados de las medidas estadístcas de centrali
 | Coeficiente de asimetría | 1.19 | 1.07 | 1.06 | 
 | Coeficiente de apuntamiento (curtosis)| 0.96 | 0.56 | 0.38 |
 | Otras | 
-| Valores inferiores a la media | 
-| Valores superiores a la media |
+| Valores inferiores a la media | !!!!!!!!!!!!!!!!!!!!!!!!
+| Valores superiores a la media |!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## Tablas de contingencia
 En esta tabla se muestra la tabla de contingencia para las variables solicitudes y franja en el caso de agrupar las solicitudes en 8 intervalos. En la tabla se representa con f las frecuencias absolutas y con h las frecuencias relativas.
 
+| solicitud/franja | Primera franja | Segunda franja | f solicitud | h solicitud |
+|------------------|----------------|----------------|-------------|-------------|
+| [0,100) | 25 | 12 | 37 | 0.29 |
+| [100,200) | 13 | 20 | 33 | 0.26 |
+| [200,300) | 13 | 9 | 22 | 0.17 |
+| [300,400) | 7 | 12 | 19 | 0.15 |
+| [400,500) | 1 | 3 | 4 | 0.03 |
+| [500,600) | 4 | 1 | 5 | 0.04 |
+| [600,700) | 0 | 4 | 4 | 0.03 |
+| [700,800] | 0 | 2 | 2 | 0.02 |
+| f franja | 63 | 63 | 126 | |
+| h franja | 0.50 | 0.50 | | 1| 
+
+## Diagramas
+En el siguiente diagrama se muestra el porcentaje de solicitudes en cada una de las franjas, el total de !!!!!!!!!!!!!!!!!!!!!!
+<div>
+<p style = 'text-align:center;'>
+<img src="diagrama_de_tarta.png" width="300px">
+</p>
+</div>
+
+En los siguientes diagramas se muestran los histogramas y diagramas de caja (boxplot) de la variable solicitudes, en el caso de los histogramas, agrupada en ocho intervalos, considerando todas las franjas(izquierda), sólo las solicitudes que pertenecen a la primera franja (centro) y sólo las solicitudes que pertenecen a la segunda franja (derecha).
+En los diagramas aparecen tanto la mediana (línea negra continua) como la media (línea roja
+discontinua).
+<div>
+<p style = 'text-align:center;'>
+<img src="histogramas.png" width="">
+</p>
+</div>
+
+# Análisis de resultados
+
+# Conclusión
