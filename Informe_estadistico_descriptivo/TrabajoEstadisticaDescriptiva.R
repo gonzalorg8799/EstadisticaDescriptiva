@@ -61,7 +61,44 @@ round(kurtosis(solicitudes),2)
 round(tapply(solicitudes, franja, kurtosis),2)
 
 #### OTRAS MEDIDAS
-## valores inferiores a la media
+# Valores inferiores a la media en todas las solicitudes
+solicitudes.menores <- length(solicitudes[solicitudes < mean(solicitudes)])
+porcentaje.menores <- round(100 * solicitudes.menores / length(solicitudes))
+
+# Valores inferiores a la media en la primera franja
+solicitudes.primera.menores <- length(solicitudes.primera[solicitudes.primera < mean(solicitudes.primera)])
+porcentaje.primera.menores <- round(100 * solicitudes.primera.menores / length(solicitudes.primera))
+
+# Valores inferiores a la media en la segunda franja
+solicitudes.segunda.menores <- length(solicitudes.segunda[solicitudes.segunda < mean(solicitudes.segunda)])
+porcentaje.segunda.menores <- round(100 * solicitudes.segunda.menores / length(solicitudes.segunda))
+
+# Valores superiores a la media en todas las solicitudes
+solicitudes.mayores <- length(solicitudes[solicitudes > mean(solicitudes)])
+porcentaje.mayores <- round(100 * solicitudes.mayores / length(solicitudes))
+
+# Valores superiores a la media en la primera franja
+solicitudes.primera.mayores <- length(solicitudes.primera[solicitudes.primera > mean(solicitudes.primera)])
+porcentaje.primera.mayores <- round(100 * solicitudes.primera.mayores / length(solicitudes.primera))
+
+# Valores superiores a la media en la segunda franja
+solicitudes.segunda.mayores <- length(solicitudes.segunda[solicitudes.segunda > mean(solicitudes.segunda)])
+porcentaje.segunda.mayores <- round(100 * solicitudes.segunda.mayores / length(solicitudes.segunda))
+
+# Mostrar resultados
+solicitudes.menores
+porcentaje.menores
+solicitudes.primera.menores
+porcentaje.primera.menores
+solicitudes.segunda.menores
+porcentaje.segunda.menores
+
+solicitudes.mayores
+porcentaje.mayores
+solicitudes.primera.mayores
+porcentaje.primera.mayores
+solicitudes.segunda.mayores
+porcentaje.segunda.mayores
 
 #### TABLA DE FRECUENCIAS
 ## regla de sturges
