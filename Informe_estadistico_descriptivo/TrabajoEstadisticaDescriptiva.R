@@ -61,6 +61,8 @@ round(kurtosis(solicitudes),2)
 round(tapply(solicitudes, franja, kurtosis),2)
 
 #### OTRAS MEDIDAS
+solicitudes.primera <- as.numeric(uniones.primera.franja$Solicitudes.presentadas)
+solicitudes.segunda <- as.numeric(uniones.segunda.franja$Solicitudes.presentadas)
 # Valores inferiores a la media en todas las solicitudes
 solicitudes.menores <- length(solicitudes[solicitudes < mean(solicitudes)])
 porcentaje.menores <- round(100 * solicitudes.menores / length(solicitudes))

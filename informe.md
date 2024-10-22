@@ -74,7 +74,7 @@ En esta tabla se muestra la tabla de contingencia para las variables solicitudes
 | h franja | 0.50 | 0.50 | | 1| 
 
 ### <strong>Diagramas</strong>
-En el siguiente diagrama se muestra el porcentaje de solicitudes en cada una de las franjas, el total de !!!!!!!!!!!!!!!!!!!!!!
+En el siguiente diagrama se muestra el porcentaje de solicitudes en cada una de las franjas respecto al total de solicitudes 
 <div>
 <p style = 'text-align:center;'>
 <img src="diagrama_de_tarta.png" width="300px">
