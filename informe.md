@@ -1,24 +1,38 @@
 # Análisis de las solicitudes de uniones de hecho por la población de castilla y león
+## Índice
+1. [Introducción](#introducción)
+-   1.1 [Contexto](contexto)
+-   1.2 [Objetivo](objetivo)
+-   1.3 [alcance](alcance)
+2. [Metodología](metodologia)
+-   2.1 [Origen de los datos](origen)
+-   2.2 [Herramientas](herramientas)
+-   2.3 [Diseño](diseño)
+3. [Resultados](resultados)
+-   3.1 [Medidas estadístcas](medidas)
+-   3.2 [Tablas de contingencia](tablas)
+-   3.3 [Diagramas](diagramas)
+4. [Análisis de resultados](analisis)
+5. [Conclusión](conclusion)
+## <u> Introducción </u><a name="introduccion"></a>
 
-## <u> Introducción </u>
-
-### <strong>Contexto</strong>
+### <strong>Contexto</strong><a name="contexto"></a>
 En la comunidad de Castilla y León se solicitan anualmente miles de solicitudes de uniones de hecho, debido a la gran cantidad de solicitudes en el ultimo año, se han dividido el numero de solicitudes en dos grandes grupos, el primero se engloba con todas las solicitudes desde el año 2010 hasta el año 2016 y el segundo grupo contiene todas las solicitudes que comprenden desde el año 2017 hasta el año 2023
 
-### <strong>Objetivo</strong>
+### <strong>Objetivo</strong><a name="objetivo"></a>
 El objetivo de la investigación es: "Realizar un análisis estadístico descriptivo de las solicitudes de hecho en la comunidad de Castilla y León comparando las diferencias que existen respecto a número de solicitudes de los ultimos años con las solicitudes de años pasados".
 
-### <strong>Alcance</strong>
+### <strong>Alcance</strong><a name="alcance"></a>
 La investigacion se limita al número de solicitudes de uniones de hecho localizadas en Castilla y León en los años que comprenden entre 2010 y 2023.
 
-## <u>Metodología</u>
-### <strong>Origen de los datos</strong>
+## <u>Metodología</u><a name="metodologia"></a>
+### <strong>Origen de los datos</strong><a name="origen"></a>
 Se ha trabajado con un archivo "uniones_de_hecho.csv" que incluye todas las solicitudes presentadas en Castilla y León en los ultimos años. El archivo ha sido presentado por el ayuntamiento de la comunidad de Castilla y León.
 
-### <strong>Herramientas</strong>
+### <strong>Herramientas</strong><a name="herramientas"></a>
 Se han procesado los datos utilizando la aplicación RStudio para linux, versión 2024.09.0+375 y el paquete "e1071" para calcular los coeficientes de asimetría y apuntamiento.
 
-### <strong>Diseño</strong>
+### <strong>Diseño</strong><a name="diseño"></a>
 El resumen del diseño es el siguiente:
 
 - Variables estadísticas: Se ha analizado la variable estadística “Solicitudes presentadas”, de tipo cuantitativo discreto, con valores positivos que pueden variar desde 18 hasta 797. También se ha utilizado la variable estadística “Franja”, de tipo cualitativo, con los valores “Primera” y “Segunda”, correspondientes a dos períodos temporales distintos.
@@ -28,9 +42,9 @@ El resumen del diseño es el siguiente:
 - Muestra: 126 observaciones válidas, de las cuales 63 corresponden a la primera franja (años 2010 a 2016) y 63 a la segunda franja (años 2017 a 2023).
 
 - Organización de datos: Se ha trabajado con los datos del archivo “uniones_de_hecho.csv”, eliminando observaciones erróneas y completando un total de 126 registros válidos. Se ha añadido una nueva columna, “Franja”, que asigna el valor “Primera” para los registros de los años 2010 a 2016 y el valor “Segunda” para los registros de los años 2017 a 2023. Esto ha permitido analizar las diferencias en el comportamiento de las solicitudes de uniones de hecho entre ambas franjas temporales.
-## <u>Resultados</u>
+## <u>Resultados</u><a name="resultados"></a>
 
-### <strong>Medidas estadísticas</strong>
+### <strong>Medidas estadísticas</strong><a name="medidas"></a>
 En esta tabla se muestran los resultados de las medidas estadístcas de centralización, dispersion, localización y forma más relevantes, para el total de solicitudes y para las solicitudes de 2010-2016 y 2017-2023.
 
 | Medida | Todos | Primera franja | Segunda franja |
@@ -57,7 +71,7 @@ En esta tabla se muestran los resultados de las medidas estadístcas de centrali
 | Valores inferiores a la media | 75 (60%) | 37 (59%) | 38 (60%) |
 | Valores superiores a la media | 51 (40%) | 26 (41%) | 25 (40%) |
 
-### <strong>Tablas de contingencia</strong>
+### <strong>Tablas de contingencia</strong><a name="tablas"></a>
 En esta tabla se muestra la tabla de contingencia para las variables solicitudes y franja en el caso de agrupar las solicitudes en 8 intervalos. En la tabla se representa con f las frecuencias absolutas y con h las frecuencias relativas.
 
 | solicitud/franja | Primera franja | Segunda franja | f solicitud | h solicitud |
@@ -73,7 +87,7 @@ En esta tabla se muestra la tabla de contingencia para las variables solicitudes
 | f franja | 63 | 63 | 126 | |
 | h franja | 0.50 | 0.50 | | 1| 
 
-### <strong>Diagramas</strong>
+### <strong>Diagramas</strong><a name="diagramas"></a>
 En el siguiente diagrama se muestra el porcentaje de solicitudes en cada una de las franjas respecto al total de solicitudes 
 <div>
 <p style = 'text-align:center;'>
@@ -90,7 +104,7 @@ discontinua).
 </p>
 </div>
 
-## <u>Análisis de resultados</u>
+## <u>Análisis de resultados</u><a name="analisis"></a>
 En este apartado se realiza la interpretación de los resultados obtenidos respecto a las solicitudes de uniones de hecho, divididas en dos franjas temporales: la primera franja (2010-2016) y la segunda franja (2017-2023). Se ha considerado una muestra total de 126 observaciones, con 63 registros para cada franja temporal.
 
 1. Análisis descriptivo de las medidas de centralización:
@@ -112,5 +126,5 @@ De la tabla de frecuencias y el diagrama de barras agrupadas, se observa que la 
 En los diagramas de caja (ver figura correspondiente), se puede apreciar que la segunda franja presenta un mayor número de valores extremos, lo que contribuye a la mayor dispersión observada. En la primera franja, los valores atípicos se concentran en el rango superior, mientras que en la segunda franja se presentan algunos casos con valores de hasta 797 solicitudes, un número significativamente más alto que cualquier otro en la muestra. Este comportamiento es indicativo de un posible aumento en la variabilidad de las solicitudes presentadas en los últimos años.
 
 
-## <u>Conclusión</u>
+## <u>Conclusión</u><a name="conclusion"></a>
 Los resultados del análisis muestran un claro incremento en el número de solicitudes de uniones de hecho a lo largo del tiempo, con un aumento notable de la media y la dispersión en la segunda franja temporal. Esto sugiere un cambio en la dinámica de las solicitudes a partir de 2017, posiblemente vinculado a factores sociales, legales o culturales que han llevado a una mayor demanda de este tipo de uniones. Las medidas de dispersión y los diagramas de caja indican una mayor variabilidad en la segunda franja, lo cual podría reflejar fluctuaciones en la aceptación o el interés por las uniones de hecho en distintos momentos de esta última etapa.
